@@ -7,9 +7,10 @@ const Cardlist = ({robots}) => {
     //     return (<Card id={robots[i].id} name={robots[i].name} email={robots[i].email} key={i}/>)
     // })
 
-    if( true ) {
-        throw new Error('NOOOO');
-    }
+    // Will display the ErrorBoundary
+    // if( true ) {
+    //     throw new Error('NOOOO');
+    // }
     
     return (
         <div>
