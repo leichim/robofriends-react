@@ -11,6 +11,7 @@ import { setSearchField, requestRobots } from '../actions';
 
 // Used by react-redux to connect our props.
 // Geez, react is so cumbersome compared to Vue
+// This also gets the state from the store
 const mapStateToProps = (state) => {
     // console.log(state);
     return {
