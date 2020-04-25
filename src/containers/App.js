@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Cardlist from '../components/Cardlist';
+import Header from '../components/Header';
 import SearchBox from '../components/SearchBox';
 // import {robots} from './robots';
 import Scroll from '../components/Scroll';
@@ -100,9 +101,10 @@ class App extends React.Component {
             return <h1>Loading</h1>
         } else {
             // Scroll is a component with a slot, it can use children
+            // 
             return (
                 <div className="tc">
-                    <h1 className="f1">RoboFriends</h1>
+                    <Header /> 
                     {/* Basic <SearchBox searchChange={this.onSearchChange} />, Redux: */}
                     <SearchBox searchChange={this.props.onSearchChange} />
                     <Scroll>
